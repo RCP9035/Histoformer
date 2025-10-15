@@ -9,10 +9,12 @@ relationships across spatial and channel dimensions, facilitating learning of fi
 <p align="justify"> First, we adopt a backbone network (Xception Net) to yield hierarchical feature maps X from the histopathological images. Subsequently,
 these feature maps are given as input to the FDTL, comprising a frequency domain feature extractor (FDFE) followed by
 global atrous self-attention (GASA) to capture comprehensive global context information. </p> 
-<img src="gasa.jpg" alt="Architecture of Global Atrous Self-Attention (GASA)">
-<img src="fdfe.jpg" alt="Frequency Domain Feature Extractor (FDFE) block">
-<p align="justify"> The GASA consists of a channel-wise atrous self-attention and a spatial atrous self-attention arranged in parallel. The GASA enables capturing feature depen-
-dencies across the channel and spatial dimensions, enhancing the learned feature representations from critical regions of the
+<p align="center">
+  <img src="gasa.jpg" alt="Architecture of Global Atrous Self-Attention (GASA)" width="600" height="400" />
+  <img src="fdfe.jpg" alt="Frequency Domain Feature Extractor (FDFE) block" width="400" height="800" style="transform: rotate(90deg);" />
+</p>
+
+<p align="justify"> The GASA consists of a channel-wise atrous self-attention and a spatial atrous self-attention arranged in parallel. The GASA enables capturing feature dependencies across the channel and spatial dimensions, enhancing the learned feature representations from critical regions of the
 histopathological images. In addition, the FDTL incorporates residual connections to strengthen the flow of features in the
 network. Finally, the resulting fine-grained features are fed to a classifier to accomplish classification. </p>
 This repository contains the Histoformer code. Experiments were carried out on widely used publicly available dataset: [BreaKHis](https://web.inf.ufpr.br/vri/databases/breast-cancer-histopathological-database-breakhis/)
