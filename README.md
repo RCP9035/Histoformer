@@ -10,8 +10,8 @@ relationships across spatial and channel dimensions, facilitating learning of fi
 these feature maps are given as input to the FDTL, comprising a frequency domain feature extractor (FDFE) followed by
 global atrous self-attention (GASA) to capture comprehensive global context information. </p> 
 <p align="center">
-  <img src="gasa.jpg" alt="Architecture of Global Atrous Self-Attention (GASA)" width="600" height="400" />
-  <img src="fdfe.jpg" alt="Frequency Domain Feature Extractor (FDFE) block" width="400" height="800" style="transform: rotate(90deg);" />
+  <img src="gasa.jpg" alt="Architecture of Global Atrous Self-Attention (GASA)" width="500" height="400" />
+  <img src="fdfe.jpg" alt="Frequency Domain Feature Extractor (FDFE) block" width="500" height="500" style="transform: rotate(90deg);" />
 </p>
 
 <p align="justify"> The GASA consists of a channel-wise atrous self-attention and a spatial atrous self-attention arranged in parallel. The GASA enables capturing feature dependencies across the channel and spatial dimensions, enhancing the learned feature representations from critical regions of the
